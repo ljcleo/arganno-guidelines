@@ -1,0 +1,47 @@
+site_name: 论辩图谱项目 标注指南
+repo_url: https://github.com/ljcleo/arganno-guidelines
+edit_uri: blob/main/docs/
+nav:
+  - index.md
+  - logic.md
+  - process.md
+  - website.md
+  - modifier.md
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.instant
+    - navigation.top
+    - toc.integrate
+  font:
+    text: Noto Serif SC
+  icon:
+    logo: material/forum
+  favicon: favicon.ico
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: orange
+      toggle:
+        icon: material/weather-sunny
+        name: 启用深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: lime
+      toggle:
+        icon: material/weather-night
+        name: 关闭深色模式
+markdown_extensions:
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+extra:
+  social:
+    - icon: material/link
+      link: http://fudan-disc.com/
+      name: 复旦⼤学 DISC 实验室
+copyright: 版权所有 &copy; 2021 复旦⼤学 DISC 实验室论辩图谱项⽬组

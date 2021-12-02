@@ -1,5 +1,6 @@
 site_name: 论辩图谱项目 标注指南
 repo_url: https://github.com/ljcleo/arganno-guidelines
+repo_name: arganno-guidelines
 edit_uri: blob/main/docs/
 nav:
   - index.md
@@ -18,6 +19,7 @@ theme:
     text: Noto Serif SC
   icon:
     logo: material/forum
+    repo: fontawesome/brands/github
   favicon: favicon.ico
   palette:
     - media: "(prefers-color-scheme: light)"

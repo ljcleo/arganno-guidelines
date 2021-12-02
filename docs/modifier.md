@@ -4,7 +4,7 @@
 
 ### ARGM-COM（伴随 Comitatives）
 
-⾏使动作的伴随者：与谁⼀起完成了某项动作。
+行使动作的伴随者：与谁一起完成了某项动作。
 
 === "例句一"
     I sang a song with my sister.
@@ -15,7 +15,7 @@
 
 ### ARGM-LOC（方位 Locatives）
 
-动作的发⽣地点；可为物理⽅位，也可为抽象位置。
+动作的发生地点；可为物理方位，也可为抽象位置。
 
 === "例句一"
     He was born in Japan.
@@ -33,7 +33,7 @@
 
 ### ARGM-DIR（方向 Directional）
 
-动作的发⽣路径；当没有明确路径时，应标注为 LOC。例如，walk along the road 属⽅向，walk around the countryside 属⽅位。
+动作的发生路径；当没有明确路径时，应标注为 LOC。例如，walk along the road 属方向，walk around the countryside 属方位。
 
 === "例句一"
     The congressman snapped back that there had been enough studies of the issue.
@@ -44,7 +44,7 @@
 
 ### ARGM-GOL（目标 Goal）
 
-动作的⽬标、对象等，或实际动作的终点，⼀般以 for 和 to 为标志词。
+动作的目标、对象等，或实际动作的终点，一般以 for 和 to 为标志词。
 
 === "例句一"
     The child fed the cat for her mother.
@@ -62,7 +62,7 @@
 
 ### ARGM-MNR（形式 Manner）
 
-动作是“怎样”⾏使的，可⽤以 how 开头的问句对其提问。
+动作是“怎样”行使的，可用以 how 开头的问句对其提问。
 
 === "例句一"
     Workers mechanically mixed the dry fibers in a process used to make filters.
@@ -75,7 +75,7 @@
 
 动作与时间相关的信息，例如：
 
-- 发⽣时间：in 1987、last Wednesday、soon、immediately
+- 发生时间：in 1987、last Wednesday、soon、immediately
 - 发生频率：often、always、sometimes
 - 发生顺序：first、ninth、last（注意与空间顺序区分）
 - 重复：again、repeatedly
@@ -93,7 +93,7 @@
 
 - 数值：“They raised prices **by 15 percent**.”
 - 量词：a lot、least、incredibly、extremely、really
-- ⽐较词：“He raised prices **more than she did**.”
+- 比较词：“He raised prices **more than she did**.”
 
 === "例句一"
     "An active 55-year-old in Boca Raton may care more about Senior Olympic games," she says.
@@ -104,7 +104,7 @@
 
 ### ARGM-REC（反身代词 Reciprocals）
 
-作副词时的 himself、itself、themselves、each other、own 等，通常指⽰句中的 ARG1 成分。
+作副词时的 himself、itself、themselves、each other、own 等，通常指示句中的 ARG1 成分。
 
 === "例句一"
     But voters decided that if the stadium was such a good idea someone would build it himself.
@@ -115,7 +115,7 @@
 
 ### ARGM-PRD（次要述谓 Secondary Prediction）
 
-⾃⾝具备谓词结构的修饰语，⼀般修饰动词的其他参数⽽⾮动词本⾝。典型例⼦包括：
+自身具备谓词结构的修饰语，一般修饰动词的其他参数而非动词本身。典型例子包括：
 
 - 结果体：“The boys pinched them **dead**.”“She kicked the locker lid **shut**.”
 - 描述体：“**Rosy-cheeked**, Santa came down the chimney.”
@@ -141,7 +141,7 @@
 
 ### ARGM-CAU（原因从句 Cause）
 
-动作的理由，典型标志有 because、due to 以及 why 引导的从句。若标注者⽆法分别参数的属性是动机还是原因，默认选择原因作为标签。
+动作的理由，典型标志有 because、due to 以及 why 引导的从句。若标注者无法分别参数的属性是动机还是原因，默认选择原因作为标签。
 
 === "例句一"
     Pro-forma balance sheets clearly show why Cray Research favored the spinoff.
@@ -158,11 +158,11 @@
 
 ### ARGM-NEG（否定词 Negation）
 
-包含 not、n't、never、no longer 以及其他表否定的句⼦。注意 **never** 默认标记为 NEG ⽽⾮ TMP。例句略。
+包含 not、n't、never、no longer 以及其他表否定的句子。注意 **never** 默认标记为 NEG 而非 TMP。例句略。
 
 ### ARGM-DIS（连接词 Discourse）
 
-句间其连系作⽤的词或词组，如 also、however、too、as well、but、and、as we've seen before、instead、on the other hand、for instance 等。注意，连接词须产⽣句间的连系作⽤，⽤在句⼦内部的连词仅能归为 ARGM-ADV。
+句间其连系作用的词或词组，如 also、however、too、as well、but、and、as we've seen before、instead、on the other hand、for instance 等。注意，连接词须产生句间的连系作用，用在句子内部的连词仅能归为 ARGM-ADV。
 
 === "例句一"
     But for now , they ’re looking forward to their winter meeting – Boca in February.
@@ -182,12 +182,12 @@
 
 ### ARGM-ADV（副词 Adverbials）
 
-修饰事件、但不属于以上分类的状语成分。与 MNR 不同，MNR 修饰动作本⾝，⽽ ADV 修饰整个句⼦。主要类型包括：
+修饰事件、但不属于以上分类的状语成分。与 MNR 不同，MNR 修饰动作本身，而 ADV 修饰整个句子。主要类型包括：
 
 - 时间：“Treasures are just lying around, **waiting to be picked up**.”
 - 内涵：probably、possibly
 - 焦点：only、even
-- 句子作者的评价、态度、观点、⾏为：fortunately、really、legally、frankly speaking
+- 句子作者的评价、态度、观点、行为：fortunately、really、legally、frankly speaking
 - 由 given that、despite、except for、if 等关键词引导的从句
 
 === "例句一"
@@ -199,7 +199,7 @@
 
 ### ARGM-ADJ（形容词 Adjectival）
 
-与副词类似，但适⽤于名词谓词的修饰（即定语）；请不要在修饰动词谓词或形容词谓词时使⽤该标签。
+与副词类似，但适用于名词谓词的修饰（即定语）；请不要在修饰动词谓词或形容词谓词时使用该标签。
 
 === "例句一"
     Investors have witnessed a drastic distortion in the market.
@@ -212,7 +212,7 @@
 
 ### ARGM-LVB（轻动词 Light Verb）
 
-当伸展动词（即轻动词与名词的组合）中的名词作谓词时，使⽤该标签标注与之匹配的轻动词。注意在轻动词作谓词时，应当为谓词选择轻动词⾓⾊集，⽽不是使⽤该标签。
+当伸展动词（即轻动词与名词的组合）中的名词作谓词时，使用该标签标注与之匹配的轻动词。注意在轻动词作谓词时，应当为谓词选择轻动词角色集，而不是使用该标签。
 
 === "例句一"
     The public criticized that the government has made a cowardly decision to please international corporations.
@@ -223,9 +223,9 @@
 
 ### ARGM-CXN（结构词 Construction）
 
-仅针对形容词谓词使⽤。当形容词谓词是某个固定搭配的⼀部分，且该固定搭配存在不匹配上述任何⼀个标签的成分时，应将它们统⼀标注为单⼀搭配成分。可能的搭配包括：
+仅针对形容词谓词使用。当形容词谓词是某个固定搭配的一部分，且该固定搭配存在不匹配上述任何一个标签的成分时，应将它们统一标注为单一搭配成分。可能的搭配包括：
 
-- ⽐较：“Their price is **more** expensive **than the average**.”“She came **about as** soon **as possible**.”
+- 比较：“Their price is **more** expensive **than the average**.”“She came **about as** soon **as possible**.”
 - 程度：“It is **too** late **to recover**.”“We are tough **enough to beat everybody**.”
 - 同步递进：“**The better the system is**, **the more** complicated it should be.”
 

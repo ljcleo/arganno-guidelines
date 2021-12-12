@@ -8,7 +8,7 @@
 
 例如，kill 的第二个角色集实际对应的谓词为 kill off，标注者如果选择了该角色集，须将句中的 kill 和 off 两个单词合并标注为 REL。
 
-<img src="/谓词词组.png" alt="谓词词组" width="100%"/>
+<img src="../img/谓词词组.png" alt="谓词词组" width="100%"/>
 
 ### 识别错误的谓词
 

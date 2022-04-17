@@ -1,0 +1,1159 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.9">
+    
+    
+      
+        <title>修饰参数用例 - 论辩图谱项目 标注指南</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.120efc48.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.9647289d.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Serif SC";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="orange">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="论辩图谱项目 标注指南" class="md-header__button md-logo" aria-label="论辩图谱项目 标注指南" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 12V3a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v14l4-4h10a1 1 0 0 0 1-1m4-6h-2v9H6v2a1 1 0 0 0 1 1h11l4 4V7a1 1 0 0 0-1-1Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            论辩图谱项目 标注指南
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              修饰参数用例
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="orange"  aria-label="启用深色模式"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="启用深色模式" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="lime"  aria-label="关闭深色模式"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="关闭深色模式" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="清空当前内容" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ljcleo/arganno-guidelines" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    arganno-guidelines
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="论辩图谱项目 标注指南" class="md-nav__button md-logo" aria-label="论辩图谱项目 标注指南" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 12V3a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v14l4-4h10a1 1 0 0 0 1-1m4-6h-2v9H6v2a1 1 0 0 0 1 1h11l4 4V7a1 1 0 0 0-1-1Z"/></svg>
+
+    </a>
+    论辩图谱项目 标注指南
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ljcleo/arganno-guidelines" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    arganno-guidelines
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        项目简介
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../logic/" class="md-nav__link">
+        标注逻辑
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../process/" class="md-nav__link">
+        标注流程
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../website/" class="md-nav__link">
+        标注网站
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../adjudicate/" class="md-nav__link">
+        仲裁任务
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          修饰参数用例
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        修饰参数用例
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    语义修饰参数
+  </a>
+  
+    <nav class="md-nav" aria-label="语义修饰参数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#argm-com-comitatives" class="md-nav__link">
+    ARGM-COM（伴随 Comitatives）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#argm-loc-locatives" class="md-nav__link">
+    ARGM-LOC（方位 Locatives）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#argm-dir-directional" class="md-nav__link">
+    ARGM-DIR（方向 Directional）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#argm-gol-goal" class="md-nav__link">
+    ARGM-GOL（目标 Goal）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#argm-mnr-manner" class="md-nav__link">
+    ARGM-MNR（形式 Manner）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#argm-tmp-temporal" class="md-nav__link">
+    ARGM-TMP（时间 Temporal）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#argm-ext-extent" class="md-nav__link">
+    ARGM-EXT（程度 Extent）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#argm-rec-reciprocals" class="md-nav__link">
+    ARGM-REC（反身代词 Reciprocals）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#argm-prd-secondary-prediction" class="md-nav__link">
+    ARGM-PRD（次要述谓 Secondary Prediction）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#argm-prp-purpose" class="md-nav__link">
+    ARGM-PRP（动机从句 Purpose）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#argm-cau-cause" class="md-nav__link">
+    ARGM-CAU（原因从句 Cause）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    语法修饰参数
+  </a>
+  
+    <nav class="md-nav" aria-label="语法修饰参数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#argm-mod-modal" class="md-nav__link">
+    ARGM-MOD（情态动词 Modal）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#argm-neg-negation" class="md-nav__link">
+    ARGM-NEG（否定词 Negation）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#argm-dis-discourse" class="md-nav__link">
+    ARGM-DIS（连接词 Discourse）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    通用修饰参数
+  </a>
+  
+    <nav class="md-nav" aria-label="通用修饰参数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#argm-adv-adverbials" class="md-nav__link">
+    ARGM-ADV（副词 Adverbials）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#argm-adj-adjectival" class="md-nav__link">
+    ARGM-ADJ（形容词 Adjectival）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    特殊结构参数
+  </a>
+  
+    <nav class="md-nav" aria-label="特殊结构参数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#argm-lvb-light-verb" class="md-nav__link">
+    ARGM-LVB（轻动词 Light Verb）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#argm-cxn-construction" class="md-nav__link">
+    ARGM-CXN（结构词 Construction）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+  <a href="https://github.com/ljcleo/arganno-guidelines/blob/main/docs/modifier.md" title="编辑此页" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+
+<h1 id="_1">修饰参数用例<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">语义修饰参数<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="argm-com-comitatives">ARGM-COM（伴随 Comitatives）<a class="headerlink" href="#argm-com-comitatives" title="Permanent link">&para;</a></h3>
+<p>行使动作的伴随者：与谁一起完成了某项动作。</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">例句一</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>I sang a song with my sister.</p>
+<table>
+<thead>
+<tr>
+<th align="center">ARG0</th>
+<th align="center">REL</th>
+<th align="center">ARG1</th>
+<th align="center"><em>ARGM-COM</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">I</td>
+<td align="center">sang</td>
+<td align="center">a song</td>
+<td align="center"><strong><em>with my sister</em></strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<h3 id="argm-loc-locatives">ARGM-LOC（方位 Locatives）<a class="headerlink" href="#argm-loc-locatives" title="Permanent link">&para;</a></h3>
+<p>动作的发生地点；可为物理方位，也可为抽象位置。</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">例句一</label><label for="__tabbed_2_2">例句二</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>He was born in Japan.</p>
+<table>
+<thead>
+<tr>
+<th align="center">ARG1</th>
+<th align="center">REL</th>
+<th align="center"><em>ARGM-LOC</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">He</td>
+<td align="center">born</td>
+<td align="center"><strong><em>in Japan</em></strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<p>In his ruling, Judge Curry added an additional $55 million to the commission ’s calculations.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><em>ARGM-LOC</em></th>
+<th align="center">ARG0</th>
+<th align="center">REL</th>
+<th align="center">ARG1</th>
+<th align="center">ARG2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong><em>In his ruling</em></strong></td>
+<td align="center">Judge Curry</td>
+<td align="center">added</td>
+<td align="center">an additional $ 55 million</td>
+<td align="center">to the commission ’s calculations</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<h3 id="argm-dir-directional">ARGM-DIR（方向 Directional）<a class="headerlink" href="#argm-dir-directional" title="Permanent link">&para;</a></h3>
+<p>动作的发生路径；当没有明确路径时，应标注为 LOC。例如，walk along the road 属方向，walk around the countryside 属方位。</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">例句一</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>The congressman snapped back that there had been enough studies of the issue.</p>
+<table>
+<thead>
+<tr>
+<th align="center">ARG0</th>
+<th align="center">REL</th>
+<th align="center"><em>ARGM-DIR</em></th>
+<th align="center">ARG1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">The congressman</td>
+<td align="center">snapped</td>
+<td align="center"><strong><em>back</em></strong></td>
+<td align="center">that there had been enough studies of the issue</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<h3 id="argm-gol-goal">ARGM-GOL（目标 Goal）<a class="headerlink" href="#argm-gol-goal" title="Permanent link">&para;</a></h3>
+<p>动作的目标、对象等，或实际动作的终点，一般以 for 和 to 为标志词。</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">例句一</label><label for="__tabbed_4_2">例句二</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>The child fed the cat for her mother.</p>
+<table>
+<thead>
+<tr>
+<th align="center">ARG0</th>
+<th align="center">REL</th>
+<th align="center">ARG1</th>
+<th align="center"><em>ARGM-GOL</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">The child</td>
+<td align="center">fed</td>
+<td align="center">the cat</td>
+<td align="center"><strong><em>for her mother</em></strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<p>We publicized to the masses our determination to fight against evil.</p>
+<table>
+<thead>
+<tr>
+<th align="center">ARG0</th>
+<th align="center">REL</th>
+<th align="center"><em>ARGM-GOL</em></th>
+<th align="center">ARG1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">We</td>
+<td align="center">publicized</td>
+<td align="center"><strong><em>to the masses</em></strong></td>
+<td align="center">our determination to fight against evil</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<h3 id="argm-mnr-manner">ARGM-MNR（形式 Manner）<a class="headerlink" href="#argm-mnr-manner" title="Permanent link">&para;</a></h3>
+<p>动作是“怎样”行使的，可用以 how 开头的问句对其提问。</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:1"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">例句一</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Workers mechanically mixed the dry fibers in a process used to make filters.</p>
+<table>
+<thead>
+<tr>
+<th align="center">ARG0</th>
+<th align="center"><em>ARGM-MNR</em></th>
+<th align="center">REL</th>
+<th align="center">ARG1</th>
+<th align="center">ARGM-LOC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Workers</td>
+<td align="center"><strong><em>mechanically</em></strong></td>
+<td align="center">mixed</td>
+<td align="center">the dry fibers</td>
+<td align="center">in a process used to make filters</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<h3 id="argm-tmp-temporal">ARGM-TMP（时间 Temporal）<a class="headerlink" href="#argm-tmp-temporal" title="Permanent link">&para;</a></h3>
+<p>动作与时间相关的信息，例如：</p>
+<ul>
+<li>发生时间：in 1987、last Wednesday、soon、immediately</li>
+<li>发生频率：often、always、sometimes</li>
+<li>发生顺序：first、ninth、last（注意与空间顺序区分）</li>
+<li>重复：again、repeatedly</li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:1"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">例句一</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Four of the five surviving workers have asbestos-related diseases, including three with recently diagnosed cancer.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><em>ARGM-TMP</em></th>
+<th align="center">REL</th>
+<th align="center">ARG2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong><em>recently</em></strong></td>
+<td align="center">diagnosed</td>
+<td align="center">cancer</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<h3 id="argm-ext-extent">ARGM-EXT（程度 Extent）<a class="headerlink" href="#argm-ext-extent" title="Permanent link">&para;</a></h3>
+<p>动作导致的数量变化，主要包括：</p>
+<ul>
+<li>数值：“They raised prices <strong>by 15 percent</strong>.”</li>
+<li>量词：a lot、least、incredibly、extremely、really</li>
+<li>比较词：“He raised prices <strong>more than she did</strong>.”</li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:1"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">例句一</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>"An active 55-year-old in Boca Raton may care more about Senior Olympic games," she says.</p>
+<table>
+<thead>
+<tr>
+<th align="center">ARG0</th>
+<th align="center">ARGM-MOD</th>
+<th align="center">REL</th>
+<th align="center"><em>ARGM-EXT</em></th>
+<th align="center">ARG1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">An active 55- year-old in Boca Raton</td>
+<td align="center">may</td>
+<td align="center">care</td>
+<td align="center"><strong><em>more</em></strong></td>
+<td align="center">about Senior Olympic games</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<h3 id="argm-rec-reciprocals">ARGM-REC（反身代词 Reciprocals）<a class="headerlink" href="#argm-rec-reciprocals" title="Permanent link">&para;</a></h3>
+<p>作副词时的 himself、itself、themselves、each other、own 等，通常指示句中的 ARG1 成分。</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:1"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">例句一</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>But voters decided that if the stadium was such a good idea someone would build it himself.</p>
+<table>
+<thead>
+<tr>
+<th align="center">ARGM-ADV</th>
+<th align="center">ARG0</th>
+<th align="center">ARGM-MOD</th>
+<th align="center">REL</th>
+<th align="center">ARG1</th>
+<th align="center"><em>ARGM-REC</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">if the stadium was such a good idea</td>
+<td align="center">someone</td>
+<td align="center">would</td>
+<td align="center">build</td>
+<td align="center">it</td>
+<td align="center"><strong><em>himself</em></strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<h3 id="argm-prd-secondary-prediction">ARGM-PRD（次要述谓 Secondary Prediction）<a class="headerlink" href="#argm-prd-secondary-prediction" title="Permanent link">&para;</a></h3>
+<p>自身具备谓词结构的修饰语，一般修饰动词的其他参数而非动词本身。典型例子包括：</p>
+<ul>
+<li>结果体：“The boys pinched them <strong>dead</strong>.”“She kicked the locker lid <strong>shut</strong>.”</li>
+<li>描述体：“<strong>Rosy-cheeked</strong>, Santa came down the chimney.”</li>
+<li>as 短语：“It is supplied <strong>as security in the transaction</strong>.”（注意与“as ... as ...”结构区分）</li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:1"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">例句一</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>This wage inflation is bleeding the NFL dry, the owners contend.</p>
+<table>
+<thead>
+<tr>
+<th align="center">ARG0</th>
+<th align="center">REL</th>
+<th align="center">ARG1</th>
+<th align="center"><em>ARGM-PRD</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">This wage inflation</td>
+<td align="center">bleeding</td>
+<td align="center">the NFL</td>
+<td align="center"><strong><em>dry</em></strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<h3 id="argm-prp-purpose">ARGM-PRP（动机从句 Purpose）<a class="headerlink" href="#argm-prp-purpose" title="Permanent link">&para;</a></h3>
+<p>动作的动机，典型标志有 for、to、in order to 和 so that 等。</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="10:1"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">例句一</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>More than a few CEOs say the redcarpet treatment tempts them to return to a heartland city for future meetings.</p>
+<table>
+<thead>
+<tr>
+<th align="center">ARG1</th>
+<th align="center">REL</th>
+<th align="center">ARG4</th>
+<th align="center"><em>ARGM-PRP</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">them</td>
+<td align="center">return</td>
+<td align="center">to a heartland city</td>
+<td align="center"><strong><em>for future meetings</em></strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<h3 id="argm-cau-cause">ARGM-CAU（原因从句 Cause）<a class="headerlink" href="#argm-cau-cause" title="Permanent link">&para;</a></h3>
+<p>动作的理由，典型标志有 because、due to 以及 why 引导的从句。若标注者无法分别参数的属性是动机还是原因，默认选择原因作为标签。</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="11:1"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio" /><div class="tabbed-labels"><label for="__tabbed_11_1">例句一</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Pro-forma balance sheets clearly show why Cray Research favored the spinoff.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><em>ARGM-CAU</em></th>
+<th align="center">ARG0</th>
+<th align="center">REL</th>
+<th align="center">ARG1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong><em>why</em></strong></td>
+<td align="center">Cray Research</td>
+<td align="center">favored</td>
+<td align="center">the spinoff</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<h2 id="_3">语法修饰参数<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="argm-mod-modal">ARGM-MOD（情态动词 Modal）<a class="headerlink" href="#argm-mod-modal" title="Permanent link">&para;</a></h3>
+<p>包括 will、may、can、must、shall、might、should、could 和 would 等。例句略。</p>
+<h3 id="argm-neg-negation">ARGM-NEG（否定词 Negation）<a class="headerlink" href="#argm-neg-negation" title="Permanent link">&para;</a></h3>
+<p>包含 not、n't、never、no longer 以及其他表否定的句子。注意 <strong>never</strong> 默认标记为 NEG 而非 TMP。例句略。</p>
+<h3 id="argm-dis-discourse">ARGM-DIS（连接词 Discourse）<a class="headerlink" href="#argm-dis-discourse" title="Permanent link">&para;</a></h3>
+<p>句间其连系作用的词或词组，如 also、however、too、as well、but、and、as we've seen before、instead、on the other hand、for instance 等。注意，连接词须产生句间的连系作用，用在句子内部的连词仅能归为 ARGM-ADV。</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="12:2"><input checked="checked" id="__tabbed_12_1" name="__tabbed_12" type="radio" /><input id="__tabbed_12_2" name="__tabbed_12" type="radio" /><div class="tabbed-labels"><label for="__tabbed_12_1">例句一</label><label for="__tabbed_12_2">例句二</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>But for now , they ’re looking forward to their winter meeting – Boca in February.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><em>ARGM-DIS</em></th>
+<th align="center">ARGM-TMP</th>
+<th align="center">ARG0</th>
+<th align="center">REL</th>
+<th align="center">ARG1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong><em>But</em></strong></td>
+<td align="center">for now</td>
+<td align="center">they</td>
+<td align="center">looking forward</td>
+<td align="center">to their winter meeting – Boca in February</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<p>The notification also clarifies the requirements of the evaluation.</p>
+<table>
+<thead>
+<tr>
+<th align="center">ARG0</th>
+<th align="center"><em>ARGM-DIS</em></th>
+<th align="center">REL</th>
+<th align="center">ARG1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">The notification</td>
+<td align="center"><strong><em>also</em></strong></td>
+<td align="center">clarifies</td>
+<td align="center">the requirements of the evaluation</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<h2 id="_4">通用修饰参数<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="argm-adv-adverbials">ARGM-ADV（副词 Adverbials）<a class="headerlink" href="#argm-adv-adverbials" title="Permanent link">&para;</a></h3>
+<p>修饰事件、但不属于以上分类的状语成分。与 MNR 不同，MNR 修饰动作本身，而 ADV 修饰整个句子。主要类型包括：</p>
+<ul>
+<li>时间：“Treasures are just lying around, <strong>waiting to be picked up</strong>.”</li>
+<li>内涵：probably、possibly</li>
+<li>焦点：only、even</li>
+<li>句子作者的评价、态度、观点、行为：fortunately、really、legally、frankly speaking</li>
+<li>由 given that、despite、except for、if 等关键词引导的从句</li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="13:1"><input checked="checked" id="__tabbed_13_1" name="__tabbed_13" type="radio" /><div class="tabbed-labels"><label for="__tabbed_13_1">例句一</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Happily, she sang.（表示“I am happy that she sang”。注意与表示 “She sang happily.” 的情况区分，这里 happily 标注为 ARGM-MNR）</p>
+<table>
+<thead>
+<tr>
+<th align="center"><em>ARGM-ADV</em></th>
+<th align="center">ARG0</th>
+<th align="center">REL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong><em>Happily</em></strong></td>
+<td align="center">she</td>
+<td align="center">sang</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<h3 id="argm-adj-adjectival">ARGM-ADJ（形容词 Adjectival）<a class="headerlink" href="#argm-adj-adjectival" title="Permanent link">&para;</a></h3>
+<p>与副词类似，但适用于名词谓词的修饰（即定语）；请不要在修饰动词谓词或形容词谓词时使用该标签。</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="14:1"><input checked="checked" id="__tabbed_14_1" name="__tabbed_14" type="radio" /><div class="tabbed-labels"><label for="__tabbed_14_1">例句一</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Investors have witnessed a drastic distortion in the market.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><em>ARGM-ADJ</em></th>
+<th align="center">REL</th>
+<th align="center">ARGM-LOC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong><em>drastic</em></strong></td>
+<td align="center">distortion</td>
+<td align="center">in the market</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<h2 id="_5">特殊结构参数<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h3 id="argm-lvb-light-verb">ARGM-LVB（轻动词 Light Verb）<a class="headerlink" href="#argm-lvb-light-verb" title="Permanent link">&para;</a></h3>
+<p>当伸展动词（即轻动词与名词的组合）中的名词作谓词时，使用该标签标注与之匹配的轻动词。注意在轻动词作谓词时，应当为谓词选择轻动词角色集，而不是使用该标签。</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="15:1"><input checked="checked" id="__tabbed_15_1" name="__tabbed_15" type="radio" /><div class="tabbed-labels"><label for="__tabbed_15_1">例句一</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>The public criticized that the government has made a cowardly decision to please international corporations.</p>
+<table>
+<thead>
+<tr>
+<th align="center">ARG0</th>
+<th align="center"><em>ARGM-LVB</em></th>
+<th align="center">ARGM-ADJ</th>
+<th align="center">REL</th>
+<th align="center">ARG1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">government</td>
+<td align="center"><strong><em>made</em></strong></td>
+<td align="center">cowardly</td>
+<td align="center">decision</td>
+<td align="center">to please international corporations</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<h3 id="argm-cxn-construction">ARGM-CXN（结构词 Construction）<a class="headerlink" href="#argm-cxn-construction" title="Permanent link">&para;</a></h3>
+<p>仅针对形容词谓词使用。当形容词谓词是某个固定搭配的一部分，且该固定搭配存在不匹配上述任何一个标签的成分时，应将它们统一标注为单一搭配成分。可能的搭配包括：</p>
+<ul>
+<li>比较：“Their price is <strong>more</strong> expensive <strong>than the average</strong>.”“She came <strong>about as</strong> soon <strong>as possible</strong>.”</li>
+<li>程度：“It is <strong>too</strong> late <strong>to recover</strong>.”“We are tough <strong>enough to beat everybody</strong>.”</li>
+<li>同步递进：“<strong>The better the system is</strong>, <strong>the more</strong> complicated it should be.”</li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="16:1"><input checked="checked" id="__tabbed_16_1" name="__tabbed_16" type="radio" /><div class="tabbed-labels"><label for="__tabbed_16_1">例句一</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>The workers are not united enough to give powerful reactions against the new policy.</p>
+<table>
+<thead>
+<tr>
+<th align="center">ARG0</th>
+<th align="center">ARGM-NEG</th>
+<th align="center">REL</th>
+<th align="center"><em>ARGM-CXN</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">the workers</td>
+<td align="center">not</td>
+<td align="center">united</td>
+<td align="center"><strong><em>enough to give powerful reactions against the new policy</em></strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            回到页面顶部
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="页脚">
+      
+        
+        <a href="../adjudicate/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 仲裁任务" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              仲裁任务
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      版权所有 &copy; 2021 复旦大学 DISC 实验室论辩图谱项目组
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    <a href="http://fudan-disc.com/" target="_blank" rel="noopener" title="复旦大学 DISC 实验室" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8v2m9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1 0 1.71-1.39 3.1-3.1 3.1h-4V17h4a5 5 0 0 0 5-5 5 5 0 0 0-5-5Z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.top", "toc.integrate"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.6e54b5cd.min.js"></script>
+      
+    
+  </body>
+</html>
